@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanathan Dairy Traditions</title>
+
+<style>
+:root{
+--teal:#0b6b6b;
+--dark:#043a3a;
+--gold:#d4af37;
+--cream:#f8f5eb;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+background:var(--cream);
+}
+
+header{
+background:white;
+position:sticky;
+top:0;
+padding:15px 5%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 3px 12px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo img{
+width:70px;
+height:70px;
+border-radius:50%;
+border:3px solid var(--gold);
+}
+
+.logo-text h2{
+color:var(--teal);
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+.hero{
+min-height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+flex-direction:column;
+background:linear-gradient(135deg,#024e4e,#0b6b6b,#138080);
+color:white;
+padding:30px;
+}
+
+.hero img{
+width:220px;
+height:220px;
+border-radius:50%;
+background:white;
+padding:10px;
+border:6px solid var(--gold);
+box-shadow:0 0 30px rgba(212,175,55,.6);
+}
+
+.hero h1{
+margin-top:20px;
+font-size:3rem;
+color:var(--gold);
+}
+
+.hero p{
+margin-top:15px;
+font-size:1.2rem;
+max-width:700px;
+}
+
+.btn{
+padding:14px 30px;
+display:inline-block;
+margin:10px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.primary{
+background:var(--gold);
+color:black;
+}
+
+.secondary{
+border:2px solid white;
+color:white;
+}
+
+section{
+padding:80px 8%;
+}
+
+.title{
+text-align:center;
+font-size:2.5rem;
+margin-bottom:40px;
+color:var(--teal);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 6px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+margin:10px 0;
+color:var(--teal);
+}
+
+.icon{
+font-size:50px;
+}
+
+.review{
+border-left:5px solid var(--gold);
+}
+
+.contact{
+background:var(--teal);
+color:white;
+border-radius:20px;
+padding:30px;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin-bottom:12px;
+border:none;
+border-radius:8px;
+}
+
+button{
+padding:15px;
+background:var(--gold);
+border:none;
+font-weight:bold;
+border-radius:8px;
+cursor:pointer;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+}
+
+footer{
+background:#082727;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+.hero img{
+width:160px;
+height:160px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="IMG-20260915-WA0009.jpg" alt="Sanathan Dairy Logo">
+
+<div class="logo-text">
+<h2>Sanathan Dairy</h2>
+<small>Health • Trust • Purity</small>
+</div>
+
+</div>
+
+<nav>
+<a href="#about">About</a>
+<a href="#promise">Promise</a>
+<a href="#products">Products</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<img src="IMG-20260915-WA0009.jpg" alt="Logo">
+
+<h1>Sanathan Dairy Traditions</h1>
+
+<p>
+We are not just a Dairy,
+We are a Tradition of Health, Trust & Purity.
+</p>
+
+<div>
+
+<a href="#products" class="btn primary">
+Explore Products
+</a>
+
+<a href="https://wa.me/917795376991"
+target="_blank"
+class="btn secondary">
+WhatsApp Order
+</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<p style="text-align:center;max-width:900px;margin:auto;line-height:1.8">
+
+Sanathan Dairy Traditions delivers pure,
+traditional and premium dairy products.
+Every product is crafted with authenticity,
+quality and care to ensure health and happiness
+for every family.
+
+</p>
+
+</section>
+
+<section id="promise">
+
+<h2 class="title">Our Promise</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="icon">🩺</div>
+<h3>Health</h3>
+<p>We Sell Health, Not Just Ghee</p>
+</div>
+
+<div class="card">
+<div class="icon">🤝</div>
+<h3>Trust</h3>
+<p>We Sell Trust, Not Just Products</p>
+</div>
+
+<div class="card">
+<div class="icon">🌿</div>
+<h3>Natural</h3>
+<p>We Sell Natural, Not Just Butter</p>
+</div>
+
+<div class="card">
+<div class="icon">🛡️</div>
+<h3>Purity</h3>
+<p>We Sell Pure, Not Adulterated</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="products">
+
+<h2 class="title">Our Products</h2>
+
+<div style="text-align:center;margin-bottom:20px;">
+
+<button onclick="ownerLogin()">
+🔐 Owner Login
+</button>
+
+</div>
+
+<div id="adminPanel" style="display:none;background:white;padding:20px;border-radius:10px;margin-bottom:20px;">
+
+<h3>Add New Product</h3>
+
+<input
+type="text"
+id="productName"
+placeholder="Product Name">
+
+<input
+type="text"
+id="productDesc"
+placeholder="Product Description">
+
+<button onclick="addProduct()">
+➕ Add Product
+</button>
+
+</div>
+
+<div class="grid" id="productList">
+
+<div class="card">
+
+<div class="icon">🥛</div>
+
+<h3>Fresh Milk</h3>
+
+<p>Farm Fresh Daily Delivery</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🧈</div>
+
+<h3>Butter</h3>
+
+<p>Traditional Homemade Butter</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🌾</div>
+
+<h3>A2 Cow Ghee</h3>
+
+<p>Premium Quality Ghee</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🐐</div>
+
+<h3>Goat Milk</h3>
+
+<p>Natural and Healthy</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="reviews">
+
+<h2 class="title">Customer Reviews</h2>
+
+<div class="grid">
+
+<div class="card review">
+★★★★★ <br><br>
+Excellent quality A2 Ghee.
+</div>
+
+<div class="card review">
+★★★★★ <br><br>
+Fresh milk delivered every morning.
+</div>
+
+<div class="card review">
+★★★★★ <br><br>
+Trusted and authentic products.
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="contact">
+
+<h2 class="title" style="color:white">
+Contact Us
+</h2>
+
+<div class="contact-grid">
+
+<div>
+<h3>Sanathan Dairy Traditions</h3>
+<br>
+<p>📞 7795376991</p>
+<p>📍 Mysuru, Karnataka</p>
+<p>🚚 Free Home Delivery</p>
+<p>🌐 Sanathan Dairy Traditions</p>
+</div>
+
+<div>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email Address">
+
+<textarea rows="5"
+placeholder="Write Your Review">
+</textarea>
+
+<button type="submit">
+Submit Review
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<a href="https://wa.me/917795376991"
+target="_blank"
+class="whatsapp">
+WhatsApp
+</a>
+
+<footer>
+
+<h3>Sanathan Dairy Traditions</h3>
+
+<br>
+
+<p>Our Promise, Your Wellness</p>
+
+<br>
+
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
+<script>
+
+let ownerLoggedIn = false;
+
+function ownerLogin(){
+
+let password =
+prompt("Enter Owner Password");
+
+if(password === "Sanathan2026"){
+
+ownerLoggedIn = true;
+
+document.getElementById(
+"adminPanel"
+).style.display = "block";
+
+alert("Owner Login Successful");
+
+}else{
+
+alert("Invalid Password");
+
+}
+
+}
+
+function addProduct(){
+
+if(!ownerLoggedIn){
+alert("Please login first");
+return;
+}
+
+let name =
+document.getElementById(
+"productName"
+).value;
+
+let desc =
+document.getElementById(
+"productDesc"
+).value;
+
+if(name==="" || desc===""){
+alert("Enter Product Details");
+return;
+}
+
+let newProduct = document.createElement("div");
+
+newProduct.className = "card";
+
+newProduct.innerHTML = `
+
+<div class="icon">🥛</div>
+
+<h3>${name}</h3>
+
+<p>${desc}</p>
+
+<button onclick="editProduct(this)">
+✏ Edit
+</button>
+
+<button onclick="deleteProduct(this)">
+🗑 Delete
+</button>
+
+`;
+
+document.getElementById(
+"productList"
+).appendChild(newProduct);
+
+document.getElementById(
+"productName"
+).value = "";
+
+document.getElementById(
+"productDesc"
+).value = "";
+
+}
+
+function deleteProduct(btn){
+
+if(ownerLoggedIn){
+
+btn.parentElement.remove();
+
+}
+
+}
+
+function editProduct(btn){
+
+if(!ownerLoggedIn) return;
+
+let card = btn.parentElement;
+
+let title =
+card.querySelector("h3");
+
+let desc =
+card.querySelector("p");
+
+let newTitle =
+prompt(
+"Edit Product Name",
+title.innerText
+);
+
+let newDesc =
+prompt(
+"Edit Description",
+desc.innerText
+);
+
+if(newTitle){
+title.innerText = newTitle;
+}
+
+if(newDesc){
+desc.innerText = newDesc;
+}
+
+}
+
+</script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+</body>
+</html>
